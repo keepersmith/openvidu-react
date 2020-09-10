@@ -98,8 +98,8 @@ var ToolbarComponent = function (_Component) {
                         { id: 'navSessionInfo' },
                         React.createElement('img', {
                             id: 'header_img',
-                            alt: 'OpenVidu Logo',
-                            src: 'https://raw.githubusercontent.com/OpenVidu/openvidu-call/master/front/openvidu-call/src/assets/images/openvidu_logo.png'
+                            alt: 'PechaKucha Logo',
+                            src: 'https://livepkassets.pechakucha.com/pkcreate/verification_email/fc30595a-bd02-41fc-ac79-6c22ead33faf.png'
                         }),
                         this.props.sessionId && React.createElement(
                             'div',
