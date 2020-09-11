@@ -86,6 +86,7 @@ var ToolbarComponent = function (_Component) {
         key: 'render',
         value: function render() {
             var mySessionId = this.props.sessionId;
+            var mySessionName = this.props.sessionName || this.props.sessionId;
             var localUser = this.props.user;
             return React.createElement(
                 AppBar,
@@ -108,7 +109,7 @@ var ToolbarComponent = function (_Component) {
                             React.createElement(
                                 'span',
                                 { id: 'session-title' },
-                                mySessionId
+                                mySessionName
                             )
                         )
                     ),
