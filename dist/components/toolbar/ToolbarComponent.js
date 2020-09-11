@@ -99,7 +99,8 @@ var ToolbarComponent = function (_Component) {
                         React.createElement('img', {
                             id: 'header_img',
                             alt: 'PechaKucha Logo',
-                            src: 'https://livepkassets.pechakucha.com/pkcreate/verification_email/fc30595a-bd02-41fc-ac79-6c22ead33faf.png'
+                            src: 'https://livepkassets.pechakucha.com/pkcreate/videochat/PK_Logo_LOCK_Horiz_ColorWhite.png'
+                            //src: 'https://livepkassets.pechakucha.com/pkcreate/verification_email/fc30595a-bd02-41fc-ac79-6c22ead33faf.png'
                         }),
                         this.props.sessionId && React.createElement(
                             'div',
