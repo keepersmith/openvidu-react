@@ -32,10 +32,12 @@ var VideoRoomComponent = function (_Component) {
         _this.OPENVIDU_SERVER_SECRET = _this.props.openviduSecret ? _this.props.openviduSecret : 'MY_SECRET';
         _this.hasBeenUpdated = false;
         _this.layout = new OpenViduLayout();
-        var sessionName = _this.props.sessionName ? _this.props.sessionName : 'SessionA';
-        var userName = _this.props.user ? _this.props.user : 'OpenVidu_User' + Math.floor(Math.random() * 100);
+        var sessionName = _this.props.sessionName ? _this.props.sessionName : 'PechaKucha Chat '+ Math.floor(Math.random() * 100);
+        var sessionId = _this.props.sessionId ? _this.props.sessionId : 'PechaKucha'+ Math.floor(Math.random() * 100);
+        var userName = _this.props.user ? _this.props.user : 'PechaKucha User ' + Math.floor(Math.random() * 100);
         _this.state = {
-            mySessionId: sessionName,
+            mySessionName: sessionName,
+            mySessionId: sessionId,
             myUserName: userName,
             session: undefined,
             localUser: undefined,
@@ -488,6 +490,7 @@ var VideoRoomComponent = function (_Component) {
                 'div',
                 { className: 'container', id: 'container' },
                 React.createElement(ToolbarComponent, {
+                    sessionName: this.state.mySessionName,
                     sessionId: mySessionId,
                     user: localUser,
                     showNotification: this.state.messageReceived,
