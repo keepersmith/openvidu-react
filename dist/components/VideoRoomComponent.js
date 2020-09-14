@@ -522,6 +522,7 @@ var VideoRoomComponent = function (_Component) {
                         'div',
                         { className: 'OT_root OT_publisher custom-class', style: chatDisplay },
                         React.createElement(ChatComponent, {
+                            sessionName: this.state.mySessionName,
                             user: localUser,
                             chatDisplay: this.state.chatDisplay,
                             close: this.toggleChat,
